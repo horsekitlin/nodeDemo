@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    app: webserver
+spec:
+  containers:
+    - name: pod-demo
+      image: horsekit1982/nodedemo
+      ports:
+        - containerPort: 3001
